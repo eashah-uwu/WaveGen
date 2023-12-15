@@ -254,7 +254,7 @@ export const ConnectionPage = ({ json, changeState, setJson, filename }) => {
             )}
           </div>
           <div className="flex flex-1">
-            <div className="flex flex-1 flex-col gap-2 p-4 h-[72vh] overflow-y-auto">
+            <div className="flex flex-1 flex-col gap-2 p-4 h-[67vh] overflow-y-auto">
               {displayConnections}
             </div>
           </div>
