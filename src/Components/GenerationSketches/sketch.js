@@ -94,6 +94,7 @@ export const sketch = (p5) => {
       fixedEntropies = undefined;
       initDefaultEntropy()
       initEntropies()
+      displayGrid()
     }
     if (callback !== "NONE") return;
 
