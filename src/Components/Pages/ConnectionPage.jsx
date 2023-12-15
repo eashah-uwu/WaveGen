@@ -118,7 +118,6 @@ export const ConnectionPage = ({ json, changeState, setJson, filename }) => {
   };
 
   const isSameConnection = (c1, c2) => {
-    console.log(c1, c2);
     let result =
       (c1[0].parent.name === c2[0].parent.name &&
         c1[0].direction === c2[0].direction &&
@@ -128,7 +127,6 @@ export const ConnectionPage = ({ json, changeState, setJson, filename }) => {
         c1[0].direction === c2[1].direction &&
         c1[1].parent.name === c2[0].parent.name &&
         c1[1].direction === c2[0].direction);
-    console.log(result);
     return result;
   };
 
@@ -144,7 +142,6 @@ export const ConnectionPage = ({ json, changeState, setJson, filename }) => {
             else setHoverConnection(connection);
           }}
           filter={filterConnections}
-          bla={console.log(page)}
         />
       )),
     [connections, page]

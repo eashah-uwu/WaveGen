@@ -19,7 +19,6 @@ export const GenerationPage = ({ tilesJson, changeState, setJson: updateJson, fi
   const [animationSpeed, setAnimationSpeed] = useState(10)
   const [callbackWord, setCallbackWord] = useState("NONE") 
 
-  console.log(tilesJson)  
 
   useEffect(() => {
     const tiles = [];

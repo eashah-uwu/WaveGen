@@ -20,7 +20,6 @@ const isSameConnection = (connection1, connection2) => {
 };
 
 export const extractConnectionsAndTiles = (json, width, height) => {
-  console.log("Extracting")
   let names = Object.keys(json);
   let tilesToReturn = makeTileObjects(getTileImages(json), width, height);
   let connectionsToReturn = [];

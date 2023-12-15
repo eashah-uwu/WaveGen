@@ -48,7 +48,6 @@ export const sketch = (p5) => {
   }
 
   p5.updateWithProps = ({width: w, height: h, json, gridSize, animationSpeed: speed=0, callback, fixedTile=null}) => {
-    console.log(json)
     if (toPlace !== fixedTile) placeOrientation = 0
     toPlace = fixedTile
     if (speed !== animationSpeed) {
@@ -153,7 +152,7 @@ export const sketch = (p5) => {
   p5.keyPressed = () => {
     if (p5.key === 'r') p5.setup()
     if (p5.key === 'z') {if (undoStack.length !== 0) undoAllChanges(undoStack.splice(-1, 1)[0])}
-    if (p5.key === ' ') {pause = !pause; console.log(stackPointer, drawStack.length, stackPointer/drawStack.length * 100)}
+    if (p5.key === ' ') {pause = !pause;}
     if (p5.key === 'ArrowRight') placeOrientation = mod((placeOrientation + 1), 4)
     if (p5.key === 'ArrowLeft') placeOrientation = mod((placeOrientation - 1), 4)
   }
@@ -192,7 +191,6 @@ export const sketch = (p5) => {
   }
 
   const displayFinalImage = () => {
-    console.log("FINAL IMAGE")
     p5.textSize(tileSize/5)
     p5.textAlign(p5.CENTER, p5.CENTER)
     for (let y = 0; y < N; y++) {
@@ -389,7 +387,6 @@ export const sketch = (p5) => {
     p5.textSize(35)
     p5.textAlign(p5.CENTER, p5.CENTER)
     p5.text("NO IMAGE FOUND", width/2, height/2)
-    console.log("NO IMAGE FOUND")
     toRestart = false
   }
 
@@ -408,14 +405,12 @@ export const sketch = (p5) => {
       toPlace = toRecover
     }
 
-    console.log("CLICKED", x, y)
     if (toPlace !== null && stackPointer === 0) {
       const {status, allChanges} = updateEntropy(x, y, {name: toPlace, orientation: placeOrientation}, true)
       if (!status) undoAllChanges(allChanges)
       else {
         displayTile(getTileImg(x, y), x, y, tileSize)
         undoStack.push(allChanges)
-        console.log(undoStack)
       }
       return
     }
@@ -429,9 +424,6 @@ export const sketch = (p5) => {
     let found = fillNext([x, y])
     started = false
     let endTime = p5.millis()
-    console.log("FILLED", fillCount)
-    console.log("ENDED IN", endTime-startTime, startTime, endTime)
-    console.log("UPDATES MADE", updateCount, drawStack.length)
     if (!found) {
       drawStack = []
       imageNotFound()
