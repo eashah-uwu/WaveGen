@@ -139,6 +139,7 @@ export const DrawingPage = ({changeState, json, setJson, filename}) => {
   }
   
   const deleteFromJSON = (tileName) => {
+    console.log(workingJson, tiles, tileName)
     if (!workingJson.tileSet[tileName]) return
     delete workingJson.tileSet[tileName]
     let names = Object.keys(workingJson.tileSet)
@@ -177,7 +178,7 @@ export const DrawingPage = ({changeState, json, setJson, filename}) => {
       t.push({name: names[n], img: workingJson.tileSet[names[n]].img})
     }
     setTiles(t)
-  }, [workingJson]) 
+  }, []) 
 
   useEffect(() => {
     setTilesDisplay(tiles.map((tile, i) => (
@@ -214,6 +215,7 @@ export const DrawingPage = ({changeState, json, setJson, filename}) => {
 
     if (editingTile === "") {
       let newName = randomID()
+      console.log(newName, tiles)
       let tile = {name: newName, img}
       setTiles(t => [tile, ...t])
     } else {
