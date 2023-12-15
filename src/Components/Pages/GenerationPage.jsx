@@ -71,7 +71,7 @@ export const GenerationPage = ({ tilesJson, changeState, setJson: updateJson, fi
     <div className="flex h-full aspect-video items-center justify-center gap-4">
       <div className="font-sans flex flex-col justify-evenly p-4 bg-neutral-900 rounded-2xl h-4/5 w-72">
         <div className="flex items-center">
-          <button className="bg-neutral-800 text-white rounded-md bg-opacity-75 p-2 hover:scale-105 hover:bg-opacity-100" onClick={() => {changeState("CONNECTING"); updateJson(json)}}>
+          <button id="connectButton"  className="bg-neutral-800 text-white rounded-md bg-opacity-75 p-2 hover:scale-105 hover:bg-opacity-100" onClick={() => {changeState("CONNECTING"); updateJson(json)}}>
               <svg className="h-10 w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>arrow-left</title><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" fill="currentColor"/></svg>
           </button>
           <p className="flex-1 text-center text-white text-2xl font-playfair">Settings</p>

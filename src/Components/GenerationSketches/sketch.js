@@ -1,4 +1,4 @@
-import { rotateImage } from "../AdjacencySketches/Tiles";
+import { rotateImage } from "../ConnectionSketches/Tiles";
 
 export const sketch = (p5) => {
   let defaultCount = 100

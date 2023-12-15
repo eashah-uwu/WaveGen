@@ -1,30 +1,30 @@
 .WELCOME{
-    background-color: #2fcffc;
+    background-color: #acedff;
     background-image: url('../Images/Welcome.png');
     background-size: cover;
   }
 
 .GENERATING{
-    background-color: #d67cf9;
+    background-color: #e9b3ff;
     background-image: url('../Images/Generating.jpg');
     background-size: cover;
   }
 
 .DRAWING{
-  background-color: #420379;
+  background-color: #3e2058;
   background-image: url('../Images/Drawing.jpg');
   background-size: cover;
 }
 
 .CONNECTING {
-  background-color: #0192e1;
+  background-color: #7ad1ff;
   background-image: url('../Images/Connecting.jpg');
   background-size: cover;
   background-position: 0 75%;
 }
 
 .STARTING {
-  background-color: #226ff5;
+  background-color: #f564df;
   background-image: url('../Images/Starting.jpg');
   background-size: cover;
   filter: hue-rotate(-120deg);

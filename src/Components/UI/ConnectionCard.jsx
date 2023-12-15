@@ -1,5 +1,5 @@
 import {memo, useEffect, useState } from "react";
-import { rotateImage } from "../AdjacencySketches/Tiles";
+import { rotateImage } from "../ConnectionSketches/Tiles";
 import { TileImg } from "./TileImg";
 
 export const mod = (n, d) => {

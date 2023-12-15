@@ -1,4 +1,4 @@
-import { sketch } from "../AdjacencySketches/sketch";
+import { sketch } from "../ConnectionSketches/sketch";
 import React, { useEffect, useMemo, useState } from "react";
 import ConnectionCard from "../UI/ConnectionCard";
 import {
@@ -8,7 +8,7 @@ import {
   makeTileObjects,
 } from "../../assets/JsonManipulation";
 import "../../Styles/Backgrounds.css";
-import { ConnectingBoard } from "../AdjacencySketches/ConnectingBoard";
+import { ConnectingBoard } from "../ConnectionSketches/ConnectingBoard";
 
 const simplifyConnections = (Connections) => {
   return Connections.map((connection) => [

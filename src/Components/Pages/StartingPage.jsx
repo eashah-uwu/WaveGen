@@ -16,14 +16,13 @@ export const StartingPage = ({changeState, setJson, setFilename, json, filename,
       setError(null)
       let text = await file.text()
       let json = JSON.parse(text)
-      setFilename(file.name.slice(0, file.name.length-5))
       setJson(json)
+      setFilename(file.name.slice(0, file.name.length-5))
       changeState("GENERATING")
       setImported(true) 
       setStarted(false)
     } catch (e) {
       setError(e.message)
-      setImporting(false)
     }
   }
 
@@ -99,7 +98,7 @@ export const StartingPage = ({changeState, setJson, setFilename, json, filename,
               <input className="primary-button font-playfair p-4 text-xl text-black" placeholder="Project Name" value={projectName} onChange={(e) => setProjectName(e.target.value)} />
               <div className="flex gap-2">
                 <div className="flex-1 bg-white font-sans">
-                  <SettingSlider label={"Tile Size"} value={size} onUpdate={setSize} step={1} min={4} max={50} />
+                  <SettingSlider label={"Tile Size"} value={size} onUpdate={setSize} step={1} min={4} max={30} />
                 </div>
                 <button className="primary-button p-4 text-xl font-playfair flex-1 hover:bg-black hover:text-white hover:scale-105 duration-300 disabled:bg-opacity-50 disabled:bg-black disabled:text-white" onClick={() => {setFilename(projectName); updateJson(); changeState("DRAWING"); setImported(false); setStarted(true);}} disabled={projectName===""}>Start Project</button>
               </div>

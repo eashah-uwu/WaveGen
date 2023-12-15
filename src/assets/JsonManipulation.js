@@ -1,4 +1,4 @@
-import { Tile } from "../Components/AdjacencySketches/Tiles";
+import { Tile } from "../Components/ConnectionSketches/Tiles";
 import { mod } from "../Components/UI/ConnectionCard";
 
 export const getTileImages = (tileSet) => {
