@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,700&family=Roboto+Condensed&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-playfair {
+    font-family: "Playfair Display";
+}
+
+.font-roboto {
+    font-family: "Roboto Condensed";
+}
+
+.primary-button {
+    @apply bg-white text-[#562545] rounded-2xl border border-black tracking-wider hover:bg-opacity-70
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #737373 #ffffff;
+}
+
+input::file-selector-button {
+    @apply bg-white text-[#562545] rounded-lg border border-black tracking-wider hover:bg-opacity-70 text-lg py-2 px-4 font-playfair hover:bg-black hover:text-white hover:bg-opacity-100 duration-300
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #737373;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}

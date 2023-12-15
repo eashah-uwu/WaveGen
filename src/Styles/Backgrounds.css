@@ -1,0 +1,26 @@
+.WELCOME{
+    background-image: url('../Images/Welcome.png');
+    background-size: cover;
+  }
+
+.GENERATING{
+    background-image: url('../Images/Generating.jpg');
+    background-size: cover;
+  }
+
+.DRAWING{
+  background-image: url('../Images/Drawing.jpg');
+  background-size: cover;
+}
+
+.CONNECTING {
+  background-image: url('../Images/Connecting.jpg');
+  background-size: cover;
+  background-position: 0 75%;
+}
+
+.STARTING {
+  background-image: url('../Images/Starting.jpg');
+  background-size: cover;
+  filter: hue-rotate(-120deg);
+}
