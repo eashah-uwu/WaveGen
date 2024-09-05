@@ -1,8 +1,30 @@
-# React + Vite
+# WaveGen
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![WaveGen](https://img.shields.io/badge/WaveGen-v1.0-blue.svg)](https://wavegen.netlify.app)
 
-Currently, two official plugins are available:
+**WaveGen** is an innovative image generation tool designed for creative minds, game designers, and artists who seek to transform their visions into interactive virtual landscapes. Whether you're crafting intricate maps for games or simply exploring artistic possibilities, WaveGen provides a platform where innovation and imagination converge.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Get Started
+
+1. Visit the [WaveGen website](https://wavegen.netlify.app) to explore the tool.
+2. Check out the [WaveGen Demo Video](https://www.youtube.com/watch?v=U3T1dOCVTsg) on YouTube to see it in action.
+
+## Installation
+
+To get started with WaveGen locally:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/wavegen.git
+2. Navigate to the project directory:
+   ```bash
+   cd wavegen
+3. Install the dependencies:
+   ```bash
+   npm install
+4. Start:
+   ```bash
+   npm run dev
+   
+
