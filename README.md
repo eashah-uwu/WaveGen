@@ -10,6 +10,22 @@
 1. Visit the [WaveGen website](https://wavegen.netlify.app) to explore the tool.
 2. Check out the [WaveGen Demo Video](https://www.youtube.com/watch?v=U3T1dOCVTsg) on YouTube to see it in action.
 
+<table>
+  <tr>
+    <td><img width="350px" src="https://github.com/eashah-uwu/WaveGen/blob/main/Picture10.png" alt="wavegen" /></td>
+    <td><img width="350px" height="auto" src="https://github.com/eashah-uwu/WaveGen/blob/main/Picture11.jpg" alt="wavegen" /></td>
+  </tr>
+  <tr>
+    <td><img width="350px" height="auto" src="https://github.com/eashah-uwu/WaveGen/blob/main/Picture12.png" alt="wavegen" /></td>
+    <td><img width="350px" src="https://github.com/eashah-uwu/WaveGen/blob/main/Picture13.png" alt="wavegen" /></td>
+  </tr>
+  <tr>
+    <td><img width="350px" src="https://github.com/eashah-uwu/WaveGen/blob/main/Picture14.png" alt="wavegen" /></td>
+  </tr>
+ 
+</table>
+
+
 ## Installation
 
 To get started with WaveGen locally:
