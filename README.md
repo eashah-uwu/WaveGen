@@ -13,7 +13,8 @@
 <table>
   <tr>
     <td><img width="350px" src="https://github.com/eashah-uwu/WaveGen/blob/main/Picture10.png" alt="wavegen" /></td>
-    <td><img width="350px" height="auto" src="https://github.com/eashah-uwu/WaveGen/blob/main/Picture11.jpg" alt="wavegen" /></td>
+    <td><img width="350px" height="auto" src="https://github.com/eashah-uwu/WaveGen/blob/main/Picture1.gif" alt="wavegen" /></td>
+
   </tr>
   <tr>
     <td><img width="350px" height="auto" src="https://github.com/eashah-uwu/WaveGen/blob/main/Picture12.png" alt="wavegen" /></td>
@@ -21,6 +22,7 @@
   </tr>
   <tr>
     <td><img width="350px" src="https://github.com/eashah-uwu/WaveGen/blob/main/Picture14.png" alt="wavegen" /></td>
+        <td><img width="350px" height="auto" src="https://github.com/eashah-uwu/WaveGen/blob/main/Picture11.jpg" alt="wavegen" /></td>
   </tr>
  
 </table>
