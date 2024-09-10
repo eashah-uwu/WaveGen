@@ -34,7 +34,7 @@ To get started with WaveGen locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/wavegen.git
+   git clone https://github.com/eashah-uwu/wavegen.git
 2. Navigate to the project directory:
    ```bash
    cd wavegen
